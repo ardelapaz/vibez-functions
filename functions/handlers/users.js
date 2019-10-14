@@ -23,7 +23,6 @@ exports.signUp = (req, res) => {
 		firstName: req.body.firstName,
 		lastName: req.body.lastName
 	};
-	console.log(newUser.firstName);
 	const { valid, errors } = validateSignupData(newUser);
 
 	if (!valid) return res.status(400).json(errors);
