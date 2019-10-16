@@ -79,7 +79,6 @@ exports.createNotificationOnComment = functions.firestore
 					doc.exists &&
 					doc.data().userHandle !== snapshot.data().userHandle
 				) {
-					console.log('test');
 					return db.doc(`/notifications/${snapshot.id}`).set({
 						createdAt: new Date().toISOString(),
 						recipient: doc.data().userHandle,
