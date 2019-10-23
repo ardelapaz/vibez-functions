@@ -25,7 +25,6 @@ exports.postWave = (req, res) => {
 	if (req.body.body.trim() === '') {
 		return res.status(400).json({ body: 'Body must not be empty' });
 	}
-	console.log(req.user);
 	const name = `${req.user.firstName} ${req.user.lastName}`;
 	const newWave = {
 		body: req.body.body,
@@ -142,7 +141,6 @@ exports.upvoteWave = (req, res) => {
 			}
 		})
 		.then((data) => {
-			console.log(data);
 			if (data.empty) {
 				return db
 					.collection('upvotes')
