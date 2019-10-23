@@ -4,9 +4,9 @@ Here in lies the code that makes up the backend of Project Vibez.
 
 ## Built With
 
-* [Firebase](https://firebase.google.com/) - Backend cloud functions
-* [Express](https://expressjs.com/en/api.html) - Dependency Management
-* [Node.js](https://nodejs.org/en/docs/) - Used to generate RSS Feeds
+* [Firebase](https://firebase.google.com/)
+* [Express](https://expressjs.com/en/api.html) 
+* [Node.js](https://nodejs.org/en/docs/) 
 
 ## License
 
