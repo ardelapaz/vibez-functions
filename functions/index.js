@@ -3,6 +3,9 @@ const FBAuth = require('./utility/FBAuth');
 const functions = require('firebase-functions');
 const { db } = require('./utility/admin');
 
+const cors = require('cors');
+app.use(cors());
+
 const {
 	getAllWaves,
 	postWave,
