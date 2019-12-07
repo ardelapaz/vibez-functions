@@ -66,3 +66,4 @@ node_modules/
 
 # misc
 default-service-key.json
+utility/config.js
